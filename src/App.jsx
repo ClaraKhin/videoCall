@@ -1,5 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { HomePage } from "./HomePage";
+import { VideoPage } from "./VideoPage";
 
 function App() {
   const router = createBrowserRouter([
@@ -9,7 +10,7 @@ function App() {
     },
     {
       path: "/room/:roomId",
-      element: <h1>Room</h1>,
+      element: <VideoPage />,
     },
   ]);
   return (
