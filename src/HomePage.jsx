@@ -15,12 +15,12 @@ export const HomePage = () => {
   return (
     <div className="flex flex-col items-center justify-center h-screen w-screen">
       <h1
-        className="text-4xl font-bold text-white"
+        className="text-3xl font-bold text-white text-center"
         style={{ marginBottom: "2rem" }}
       >
         Welcome to the Video App
       </h1>
-      <div className="flex items-center justify-center gap-4">
+      <div className="flex items-center justify-center gap-4 md:flex-row flex-col">
         <input
           value={roomId}
           onChange={(e) => setRoomId(e.target.value)}
