@@ -20,42 +20,42 @@ export const HomePage = () => {
       >
         Welcome to the Video App
       </h1>
-      <input
-        value={roomId}
-        onChange={(e) => setRoomId(e.target.value)}
-        type="text"
-        placeholder="Enter Room ID"
-        className=" border-none bg-black bg-opacity-50"
-        style={{
-          marginBottom: "1rem",
-          padding: "0.5rem",
-          width: "300px",
-          textAlign: "center",
-          fontSize: "1rem",
-          border: "none",
-          borderRadius: "4px",
-          backgroundColor: "rgba(0, 0, 0, 0.5)",
-          color: "#fff",
-          outline: "none",
-        }}
-      />
-      <button
-        onClick={handleJoinRoom}
-        className="bg-blue-500 text-white p-2 rounded hover:bg-blue-600"
-        style={{
-          fontSize: "1rem",
-          padding: "0.5rem 1rem",
-          border: "none",
-          cursor: "pointer",
-          width: "300px",
-          textAlign: "center",
-          backgroundColor: "#007BFF",
-          color: "#fff",
-          borderRadius: "4px",
-        }}
-      >
-        Join Room
-      </button>
+      <div className="flex items-center justify-center gap-4">
+        <input
+          value={roomId}
+          onChange={(e) => setRoomId(e.target.value)}
+          type="text"
+          placeholder="Enter Room ID"
+          className=" border-none bg-black bg-opacity-50"
+          style={{
+            padding: "1rem",
+            width: "300px",
+            textAlign: "center",
+            fontSize: "1rem",
+            border: "none",
+            borderRadius: "4px",
+            backgroundColor: "rgba(0, 0, 0, 0.5)",
+            color: "#fff",
+            outline: "none",
+          }}
+        />
+        <button
+          onClick={handleJoinRoom}
+          style={{
+            fontSize: "1rem",
+            padding: "1rem",
+            border: "none",
+            cursor: "pointer",
+            width: "150px",
+            textAlign: "center",
+            backgroundColor: "#007BFF",
+            color: "#fff",
+            borderRadius: "4px",
+          }}
+        >
+          Join Room
+        </button>
+      </div>
     </div>
   );
 };

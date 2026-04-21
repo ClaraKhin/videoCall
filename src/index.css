@@ -1,12 +1,25 @@
 @import "tailwindcss";
 
-
-* {
+html,
+body,
+#root {
     margin: 0;
-    padding: 0;
-    background-image: url("../src/assets/HomeBg.png");
+    min-height: 100%;
+    width: 100%;
+}
+
+body {
+    background-image: url("./assets/HomeBg.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+body.room-page {
+    background: #020617;
+}
+
+body.room-page #root {
+    background: #020617;
 }
